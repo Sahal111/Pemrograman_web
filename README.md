@@ -1,6 +1,5 @@
 <div align="center">
 
-<!-- TIPS: Taruh file GIF demo aplikasi kamu di folder docs/images/ dengan nama demo.gif -->
 <img src="docs/images/dashboard.png" alt="TaskFlow Banner" width="100%" style="border-radius: 10px;" />
 
 # 🚀 TaskFlow
@@ -57,20 +56,26 @@ graph TD
     RBAC -->|Role: PM| Admin[Project Creation & Invite Codes]
     RBAC -->|Role: Dev| Board[Kanban Updates & Attachments]
     RBAC -->|Role: QA| Review[Task Verification & Comments]
+```
 
+---
 
-🛠 Tech Stack
-Layer	Technology	Version	Description
-Frontend	React.js	v18	Core SPA Library
-State/Build	Vite	-	Next-generation Frontend Tooling
-Styling	Tailwind CSS	v3	Utility-first CSS Framework
-Backend	Laravel	v11	PHP Core Framework
-Auth	Laravel Sanctum	-	Featherweight API Authentication
-Database	MySQL	v8.0+	Relational Database Management
+## 🛠 Tech Stack
 
+| Layer | Technology | Version | Description |
+| :--- | :--- | :---: | :--- |
+| **Frontend** | React.js | v18 | Core SPA Library |
+| **State/Build**| Vite | - | Next-generation Frontend Tooling |
+| **Styling** | Tailwind CSS | v3 | Utility-first CSS Framework |
+| **Backend** | Laravel | v11 | PHP Core Framework |
+| **Auth** | Laravel Sanctum| - | Featherweight API Authentication |
+| **Database** | MySQL | v8.0+ | Relational Database Management |
 
-📂 Folder Structure
-Plaintext
+---
+
+## 📂 Folder Structure
+
+```text
 📦 project_pemrograman_web
  ┣ 📂 Backend                 # Headless Laravel API
  ┃ ┣ 📂 app
@@ -87,18 +92,27 @@ Plaintext
    ┃ ┣ 📂 pages
    ┃ ┗ 📜 App.jsx
    ┗ 📜 package.json
-🚀 Getting Started
-Ikuti langkah di bawah ini untuk menjalankan repositori di lingkungan lokal (Localhost).
-Prasyarat
-PHP >= 8.2 & Composer
-Node.js >= 18.x & npm
-MySQL Server
-1. Clone Repository
-Bash
+```
+
+---
+
+## 🚀 Getting Started
+
+Ikuti langkah di bawah ini untuk menjalankan repositori di lingkungan lokal (*Localhost*).
+
+### Prasyarat
+* PHP >= 8.2 & Composer
+* Node.js >= 18.x & npm
+* MySQL Server
+
+### 1. Clone Repository
+```bash
 git clone [https://github.com/username-kamu/project_pemrograman_web.git](https://github.com/username-kamu/project_pemrograman_web.git)
 cd project_pemrograman_web
-2. Setup Backend (Laravel)
-Bash
+```
+
+### 2. Setup Backend (Laravel)
+```bash
 cd Backend
 composer install
 cp .env.example .env
@@ -108,17 +122,21 @@ php artisan key:generate
 php artisan migrate
 php artisan storage:link
 php artisan serve
-Server Backend akan berjalan di http://localhost:8000
-3. Setup Frontend (React)
-Buka tab terminal baru:
-Bash
+```
+
+### 3. Setup Frontend (React)
+```bash
 cd frontend
 npm install
 npm run dev
-Aplikasi klien akan berjalan di http://localhost:5173
-🔐 Environment Variables
-Backend (Backend/.env)
-Ini, TOML
+```
+
+---
+
+## 🔐 Environment Variables
+
+### Backend (`Backend/.env`)
+```ini
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -127,44 +145,83 @@ DB_USERNAME=root
 DB_PASSWORD=
 
 FRONTEND_URL=http://localhost:5173
-Frontend (frontend/.env)
-Ini, TOML
-VITE_API_URL=http://localhost:8000/api
-💾 Database Setup
-Jika Anda ingin langsung menggunakan skema beserta data instan tanpa menjalankan php artisan migrate, Anda dapat meng-import berkas cadangan database yang telah disediakan:
-Bash
-mysql -u root -p taskflow_db < Backend/database/db_task_m_2026-06-29.sql
-📡 API Reference
-Berikut adalah representasi endpoint utama sistem:
-Method	Endpoint	Access	Description
-POST	/api/login	Public	Autentikasi & penerbitan token
-POST	/api/register	Public	Registrasi via kode undangan
-GET	/api/me	Auth	Mengambil sesi current user
-GET	/api/projects	Auth	Daftar seluruh proyek
-POST	/api/projects	PM	Membuat proyek baru
-PUT	/api/tasks/{id}	Auth	Pembaruan status pemindahan Kanban
-POST	/api/invite-codes	PM	Generate kode invite baru
-📸 Screenshots
-Login Interface	Dashboard Analytics
-Projects List	Kanban Board
-Schedule Calendar	Team Directory
-Project Details	User Management
+```
 
-🗺 Roadmap
-[x] REST API Boilerplate & Sanctum Auth
-[x] Kanban State Management
-[x] Role-Based Invitation Engine
-[ ] [In Progress] Real-time WebSocket Push Notifications
-[ ] Export Laporan Proyek ke format PDF / Excel
-[ ] Implementasi Tema Gelap (Dark Mode)
-🤝 Contributing
-Kontribusi selalu terbuka! Langkah untuk berkontribusi:
-Fork Project ini
-Buat Feature Branch (git checkout -b feature/AmazingFeature)
-Commit perubahan (git commit -m 'Add some AmazingFeature')
-Push ke Branch (git push origin feature/AmazingFeature)
-Buka Pull Request
-📄 License
-Didistribusikan di bawah Lisensi MIT. Lihat berkas LICENSE untuk informasi lebih lanjut.
-Dibuat oleh Sahal Anwar Hadi
-Senior Software Engineer
+### Frontend (`frontend/.env`)
+```ini
+VITE_API_URL=http://localhost:8000/api
+```
+
+---
+
+## 💾 Database Setup
+
+Import berkas cadangan database secara manual jika tidak menggunakan sistem migrasi:
+
+```bash
+mysql -u root -p taskflow_db < Backend/database/db_task_m_2026-06-29.sql
+```
+
+---
+
+## 📡 API Reference
+
+| Method | Endpoint | Access | Description |
+| :--- | :--- | :---: | :--- |
+| `POST` | `/api/login` | Public | Autentikasi & penerbitan token |
+| `POST` | `/api/register` | Public | Registrasi via kode undangan |
+| `GET` | `/api/me` | Auth | Mengambil sesi current user |
+| `GET` | `/api/projects` | Auth | Daftar seluruh proyek |
+| `POST` | `/api/projects` | **PM** | Membuat proyek baru |
+| `PUT` | `/api/tasks/{id}` | Auth | Pembaruan status pemindahan Kanban |
+| `POST` | `/api/invite-codes`| **PM** | Generate kode invite baru |
+
+---
+
+## 📸 Screenshots
+
+| Login Interface | Dashboard Analytics |
+| :---: | :---: |
+| ![](docs/images/login.png) | ![](docs/images/dashboard.png) |
+| **Projects List** | **Kanban Board** |
+| ![](docs/images/projects.png) | ![](docs/images/kanban.png) |
+| **Schedule Calendar** | **Team Directory** |
+| ![](docs/images/calendar.png) | ![](docs/images/team.png) |
+| **Project Details** | **User Management** |
+| ![](docs/images/detailsP.png) | ![](docs/images/users.png) |
+
+---
+
+## 🗺 Roadmap
+
+- [x] REST API Boilerplate & Sanctum Auth
+- [x] Kanban State Management
+- [x] Role-Based Invitation Engine
+- [ ] Real-time WebSocket Push Notifications
+- [ ] Export Laporan Proyek ke format PDF / Excel
+- [ ] Implementasi Tema Gelap (Dark Mode)
+
+---
+
+## 🤝 Contributing
+
+1. **Fork** Project ini
+2. Buat Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
+4. Push ke Branch (`git push origin feature/AmazingFeature`)
+5. Buka **Pull Request**
+
+---
+
+## 📄 License
+
+Didistribusikan di bawah Lisensi MIT. Lihat berkas `LICENSE` untuk informasi lebih lanjut.
+
+---
+
+<div align="center">
+
+**Dibuat oleh Sahal Anwar Hadi**  
+*Senior Software Engineer*
+
+</div>
