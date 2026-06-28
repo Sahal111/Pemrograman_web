@@ -188,7 +188,14 @@ Berikut adalah beberapa *endpoint* REST API utama yang tersedia:
 | Clients | Reports |
 |---------|---------|
 | ![](docs/images/clients.png) | ![](docs/images/reports.png) |
----
+
+| Detail Projects | Manajement users |
+|---------|---------|
+| ![](docs/images/detailsP.png) | ![](docs/images/users.png) |
+
+| Settings | 
+|---------|
+| ![](docs/images/settings.png) | 
 
 ## 💻 Development
 
