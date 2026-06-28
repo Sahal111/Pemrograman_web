@@ -190,32 +190,6 @@ mysql -u root -p taskflow_db < Backend/database/db_task_m_2026-06-29.sql
 | **Project Details** | **User Management** |
 | ![](docs/images/detailsP.png) | ![](docs/images/users.png) |
 
----
-
-## 🗺 Roadmap
-
-- [x] REST API Boilerplate & Sanctum Auth
-- [x] Kanban State Management
-- [x] Role-Based Invitation Engine
-- [ ] Real-time WebSocket Push Notifications
-- [ ] Export Laporan Proyek ke format PDF / Excel
-- [ ] Implementasi Tema Gelap (Dark Mode)
-
----
-
-## 🤝 Contributing
-
-1. **Fork** Project ini
-2. Buat Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke Branch (`git push origin feature/AmazingFeature`)
-5. Buka **Pull Request**
-
----
-
-## 📄 License
-
-Didistribusikan di bawah Lisensi MIT. Lihat berkas `LICENSE` untuk informasi lebih lanjut.
 
 ---
 
