@@ -1,0 +1,30 @@
+# ==========================
+# macOS
+# ==========================
+.DS_Store
+
+# ==========================
+# Node.js
+# ==========================
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+
+# ==========================
+# React / Vite
+# ==========================
+frontend/dist/
+dist/
+
+# ==========================
+# Laravel
+# ==========================
+Backend/vendor/
+Backend/.env
+Backend/storage/*.key
+Backend/bootstrap/cache/*.php
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/

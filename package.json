@@ -1,0 +1,16 @@
+{
+  "name": "project_pemrograman_-web",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd Backend && php artisan serve\" \"cd frontend && npm run dev\""
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.3"
+  }
+}
