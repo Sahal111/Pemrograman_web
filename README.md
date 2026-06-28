@@ -179,7 +179,7 @@ Berikut adalah beberapa *endpoint* REST API utama yang tersedia:
 
 | Projects | Kanban Board |
 |----------|--------------|
-| ![](docs/images/projects.png) | ![](docs/images/kanban-board.png) |
+| ![](docs/images/projects.png) | ![](docs/images/kanban.png) |
 
 | Calendar | Team |
 |----------|------|
