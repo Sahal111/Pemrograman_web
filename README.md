@@ -65,10 +65,10 @@ graph TD
 | Layer | Technology | Version | Description |
 | :--- | :--- | :---: | :--- |
 | **Frontend** | React.js | v18 | Core SPA Library |
-| **State/Build**| Vite | - | Next-generation Frontend Tooling |
+| **State/Build**| Vite | v8 | Next-generation Frontend Tooling |
 | **Styling** | Tailwind CSS | v3 | Utility-first CSS Framework |
 | **Backend** | Laravel | v11 | PHP Core Framework |
-| **Auth** | Laravel Sanctum| - | Featherweight API Authentication |
+| **Auth** | Laravel Sanctum| v4 | Featherweight API Authentication |
 | **Database** | MySQL | v8.0+ | Relational Database Management |
 
 ---
