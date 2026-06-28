@@ -171,14 +171,23 @@ Berikut adalah beberapa *endpoint* REST API utama yang tersedia:
 
 ## 📸 Screenshots
 
-| Halaman Login | Dashboard Proyek |
-| --- | --- |
-| ![Login Placeholder](docs/images/login-placeholder.png) | ![Dashboard Placeholder](docs/images/dashboard-placeholder.png) |
+## 📸 Screenshots
 
-| Kanban Board | Manajemen Pengguna |
-| --- | --- |
-| ![Tasks Placeholder](docs/images/tasks-placeholder.png) | ![Users Placeholder](docs/images/users-placeholder.png) |
+| Login | Dashboard |
+|-------|-----------|
+| ![](docs/images/login.png) | ![](docs/images/dashboard.png) |
 
+| Projects | Kanban Board |
+|----------|--------------|
+| ![](docs/images/projects.png) | ![](docs/images/kanban-board.png) |
+
+| Calendar | Team |
+|----------|------|
+| ![](docs/images/calendar.png) | ![](docs/images/team.png) |
+
+| Clients | Reports |
+|---------|---------|
+| ![](docs/images/clients.png) | ![](docs/images/reports.png) |
 ---
 
 ## 💻 Development
