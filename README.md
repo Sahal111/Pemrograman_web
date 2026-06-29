@@ -197,4 +197,8 @@ mysql -u root -p taskflow_db < Backend/database/db_task_m_2026-06-29.sql
 **Dibuat oleh Sahal Anwar Hadi**  
 *Senior Software Engineer*
 
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> a812a60 (docs: add demo animation and update README layout)
