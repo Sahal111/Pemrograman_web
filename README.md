@@ -1,6 +1,5 @@
 <div align="center">
-
-<img src="docs/images/dashboard.png" alt="TaskFlow Banner" width="100%" style="border-radius: 10px;" />
+<img src="docs/images/demo.gif" alt="TaskFlow Demo Animation" width="100%" style="border-radius: 10px;" />
 
 # 🚀 TaskFlow
 
