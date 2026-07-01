@@ -217,8 +217,8 @@ Setelah database berhasil di-*import* atau di-*seed*, gunakan kredensial berikut
 <div align="center">
 Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah **Pemrograman Web**
 
-
 </div>
+
 ---
 
 <div align="center">
