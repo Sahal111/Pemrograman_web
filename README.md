@@ -10,6 +10,7 @@
 ![React](https://img.shields.io/badge/React-18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![Academic Project](https://img.shields.io/badge/Academic_Project-Pemrograman_Web-9C27B0?style=for-the-badge)
 
 <p align="center">
   <a href="#--overview">Overview</a> •
@@ -17,7 +18,8 @@
   <a href="#--tech-stack">Tech Stack</a> •
   <a href="#--getting-started">Installation</a> •
   <a href="#--api-reference">API Docs</a> •
-  <a href="#--screenshots">Screenshots</a>
+  <a href="#--screenshots">Screenshots</a> •
+  <a href="#--developer-information">Developer</a>
 </p>
 
 </div>
@@ -106,7 +108,7 @@ Ikuti langkah di bawah ini untuk menjalankan repositori di lingkungan lokal (*Lo
 
 ### 1. Clone Repository
 ```bash
-git clone [https://github.com/username-kamu/project_pemrograman_web.git](https://github.com/username-kamu/project_pemrograman_web.git)
+git clone https://github.com/username-kamu/project_pemrograman_web.git
 cd project_pemrograman_web
 ```
 
@@ -161,6 +163,17 @@ Import berkas cadangan database secara manual jika tidak menggunakan sistem migr
 mysql -u root -p taskflow_db < Backend/database/db_task_m_2026-06-29.sql
 ```
 
+### 🔑 Default Admin Account
+
+Setelah database berhasil di-*import* atau di-*seed*, gunakan kredensial berikut untuk login pertama kali sebagai **Project Manager (Admin)**:
+
+| Field | Value |
+| :--- | :--- |
+| **Email** | `admin@example.com` |
+| **Password** | `admin123` |
+
+> ⚠️ **Catatan Keamanan:** Kredensial di atas hanya untuk keperluan demo/pengembangan lokal. Segera ubah password default setelah login pertama, dan jangan pernah menggunakan kredensial ini pada environment production.
+
 ---
 
 ## 📡 API Reference
@@ -189,11 +202,27 @@ mysql -u root -p taskflow_db < Backend/database/db_task_m_2026-06-29.sql
 | **Project Details** | **User Management** |
 | ![](docs/images/detailsP.png) | ![](docs/images/users.png) |
 
+---
+
+## 👨‍💻 Developer Information
+
+<div align="center">
+
+| Nama | NIM | Kelas |
+| :---: | :---: | :---: |
+| **Muhammad Sahal Anwar Hadi** | 24260032 | TI B Semester 4 |
+
+</div>
+
+Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah **Pemrograman Web**, dengan fokus pada penerapan arsitektur *decoupled* (Laravel REST API + React SPA) dalam studi kasus manajemen proyek IT berbasis peran.
 
 ---
 
 <div align="center">
 
-**Dibuat oleh Sahal Anwar Hadi**  
-*Senior Software Engineer*
+**Dibuat oleh Muhammad Sahal Anwar Hadi**
+*NIM 24260032 — TI B Semester 4*
 
+⭐️ Jangan lupa berikan star jika proyek ini bermanfaat!
+
+</div>
