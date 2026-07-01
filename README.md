@@ -214,7 +214,7 @@ Setelah database berhasil di-*import* atau di-*seed*, gunakan kredensial berikut
 
 </div>
 
-Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah **Pemrograman Web**, dengan fokus pada penerapan arsitektur *decoupled* (Laravel REST API + React SPA) dalam studi kasus manajemen proyek IT berbasis peran.
+Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah **Pemrograman Web**
 
 ---
 
